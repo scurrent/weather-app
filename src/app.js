@@ -4,7 +4,7 @@ const express = require("express")
 const app = express()
 
 //getting PORT from what Heroku provides
-const port = process.evn.PORT || 3000
+const port = process.env.PORT || 3000
 //handlebars plugin for express
 const hbs = require("hbs")
 //tell express this is the view engine we are using
