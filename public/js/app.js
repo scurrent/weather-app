@@ -17,7 +17,7 @@ const msg2 = document.querySelector('#message2')
 
 msg1.textContent = ""
 msg2.textContent = ""
-
+  
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()

@@ -1,0 +1,26 @@
+command to look for .ssh keys
+
+ls -a -l ~/.ssh
+
+Should tell you if ssh
+"$(ssh-agent -s)"
+
+
+ssh-add -K ~/.ssh/id_rsa
+
+
+print the contents
+cat ~/.ssh/id_rsa.pub
+
+test access to github
+ssh -T git@github.com
+
+
+heroku keys:add
+
+from root
+heroku create
+heroku create scurrent-weather-app
+
+package.json 
+"scripts" so it knows what to run

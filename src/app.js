@@ -2,6 +2,9 @@
 const path = require("path")
 const express = require("express")
 const app = express()
+
+//getting PORT from what Heroku provides
+const port = process.evn.PORT || 3000
 //handlebars plugin for express
 const hbs = require("hbs")
 //tell express this is the view engine we are using
@@ -147,7 +150,7 @@ app.get("*", (req, res) => {
     })
 })
 
-app.listen(3000, () =>{
-    console.log("The server is up on 3000")
+app.listen(port, () =>{
+    console.log("The server is up on " + port)
 
 })
